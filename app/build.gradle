@@ -1,24 +1,25 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 34
+    compileSdk 33
     defaultConfig {
         applicationId "org.ivan.bsdiff"
         minSdkVersion 14
-        targetSdkVersion 34
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
+
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     namespace 'org.ivan.bsdiff'

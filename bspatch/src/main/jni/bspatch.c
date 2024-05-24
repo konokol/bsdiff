@@ -230,7 +230,7 @@ int patch_file(int argc, char *argv[]) {
         oldpos += ctrl[2];
     };
     long long end_time = current_time();
-    __android_log_print(ANDROID_LOG_ERROR, "DEBUG", "read file finished. take %lld ms\n new size:%ld", end_time - start_time, newsize);;
+    __android_log_print(ANDROID_LOG_ERROR, "DEBUG", "read file finished. take %lld ms\n new size:%s", end_time - start_time, newsize);;
     /* Clean up the bzip2 reads */
     BZ2_bzReadClose(&cbz2err, cpfbz2);
     BZ2_bzReadClose(&dbz2err, dpfbz2);
