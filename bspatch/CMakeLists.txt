@@ -22,7 +22,6 @@ add_library( # Sets the name of the library.
              src/main/jni/bzlib/bzlib.c
              src/main/jni/bzlib/blocksort.c
              src/main/jni/bzlib/bzip2.c
-             src/main/jni/bzlib/bzip2recover.c
              src/main/jni/bzlib/compress.c
              src/main/jni/bzlib/crctable.c
              src/main/jni/bzlib/decompress.c
