@@ -37,6 +37,7 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bspatch/bspatch.c,v 1.1 2005/08/06 01:59:
 #include <jni.h>
 #include <android/log.h>
 #include <time.h>
+#include <string.h>
 
 typedef unsigned char u_char;
 
